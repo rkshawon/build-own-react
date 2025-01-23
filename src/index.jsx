@@ -1,12 +1,9 @@
 import { Ownact } from "./ownact.js";
-
-/** @jsx Ownact.createElement */
-const element = (
-  <div>
-    <h1>Hello World</h1>
-    <h2>from Didact</h2>
-  </div>
-);
+import App from "./App.jsx";
 
 const container = document.getElementById("root");
-Ownact.render(element, container);
+globalThis.Ownact = Ownact;
+
+const root = App();
+
+Ownact.render(root, container);
