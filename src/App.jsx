@@ -1,8 +1,11 @@
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
-      <h2>from Didact</h2>
+      <h1>
+        <p>Paragraph inside h1</p>
+        <a />
+      </h1>
+      <h2>h2</h2>
     </div>
   );
 };
